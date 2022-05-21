@@ -17,12 +17,37 @@ html {
 4. Kiểu dáng (kiểu chữ, hình tròn, vuông, ..)
 */
 
+/* region COMMON */
+
 .clear {
     clear: both;
 }
+
 .text-white {
     color: #fff !important;
 }
+
+.row {
+    margin: 0px -8px;
+}
+
+.col {
+    float: left;
+    padding: 0px 8px;
+}
+
+.col-two {
+    width: 50%;
+}
+
+.col-three {
+    width: 33.33333%;
+}
+
+.text-center {
+    text-align: center !important;
+}
+/* endregion COMMON */
 
 
 /* ##### BEGIN MAIN ##### */
@@ -188,12 +213,10 @@ html {
 
 #content .members-list {
     margin-top: 48px;
-    text-align: center;
 }
 
 #content .member-item {
-    float: left;
-    width: 33.33333%;
+    /* none */
 }
 
 #content .member-name {
@@ -246,13 +269,12 @@ html {
 
 /* Places */
 .places-list {
-    margin: 32px -8px 48px;
+    margin-top: 32px;
+    margin-bottom: 48px;
 }
 
 .place-item {
-    float: left;
     width: 33.33333%;
-    padding: 0px 8px;
 }
 
 .place-img {
