@@ -6,6 +6,7 @@
         <title>Band</title>
         <link rel="icon" href="./assets/img/rock-band-icon-29.jpg" type="image/x-icon" />
         <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/responsive.css">
         <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     </head>
 
@@ -37,6 +38,9 @@
                 <!-- Search -->
                 <div class="search-btn">
                     <i class="search-icon ti-search"></i>
+                </div>
+                <div id="mobile-menu" class="mobile-menu-btn">
+                    <i class="menu-icon ti-menu"></i>
                 </div>
             </div>
 
@@ -219,7 +223,7 @@
         </div>
 
 
-
+        <!-- Hide/Show buy model tickets -->
         <script>
             // Declare variable
             const buyBtns = document.querySelectorAll('.js-buy-tickets')
@@ -247,6 +251,32 @@
 
 
 
+        </script>
+
+        <!-- Hide/Show navigate on mobile -->
+        <script>
+            var header = document.getElementById('header');
+            var headerHeight = header.clientHeight;
+            var mobileMenu = document.getElementById('mobile-menu');
+
+            // Show/Hide mobile menu
+            mobileMenu.onclick = function() {
+                var isClosed = header.clientHeight === headerHeight;
+                if (isClosed) {
+                    header.style.height = 'auto';
+                } else {
+                    header.style.height = null;
+                }
+            }
+
+            // Auto close when select item menu
+            var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+            for (var i = 0; i < menuItems.length; i++) {
+                var menuItem = menuItems[i];
+                menuItem.onclick = function () {
+                    header.style.height = null
+                }
+            }
         </script>
     </body>
 </html>
