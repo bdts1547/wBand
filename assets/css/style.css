@@ -223,7 +223,8 @@ html {
     /* #region About */
 #content .content-section {
     width: 800px;
-    padding: 64px 0 112px;
+    max-width: 100%;
+    padding: 64px 16px 112px 16px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -402,6 +403,7 @@ html {
 
 #footer .copyright {
     font-size: 15px;
+    margin: 16px 0px;
 }
 
 #footer .copyright a {
