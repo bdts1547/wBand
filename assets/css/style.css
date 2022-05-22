@@ -105,7 +105,6 @@ html {
     left: 0;
     right: 0;
     z-index: 1;
-    overflow: hidden;
 }
 
 #nav {
@@ -124,15 +123,20 @@ html {
     font-size: 15px;
 }
 
-#nav > li > a {
-    color: #fff;
-    text-transform: uppercase;
-}
 #nav li a {
     text-decoration: none;
     line-height: 46.5px;
     padding: 0px 24px;
     display: block;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav > li:first-child {
+    display: inline-block;
 }
 
 #nav li:hover .subnav {
@@ -169,6 +173,13 @@ html {
 #header .search-btn {
     float: right;
     padding: 0 21px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#header .mobile-menu-btn {
+    display: none;
 }
 
 #header .search-btn:hover {
@@ -364,12 +375,6 @@ html {
     /* #endregion Place */
 
     /* #region Contact */
-
-
-
-    /* #endregion Contact */
-
-/* #endregion CONTENT */
 .contact-content {
     margin-top: 48px;
 }
@@ -397,6 +402,12 @@ html {
 #content .map-section img{
     width: 100%;
 }
+
+
+    /* #endregion Contact */
+
+/* #endregion CONTENT */
+
 /* #region FOOTER */
 
 #footer {

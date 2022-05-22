@@ -10,10 +10,41 @@
 
 /* MOBILE */
 @media (max-width:740px) {
+
+    #header {
+        overflow: hidden;
+    }
+
+    #nav {
+        display: block;
+    }
+    
     #nav > li {
         display: block;
     }
+
+    #nav .subnav {
+        position: initial;
+        min-width: 160px;
+        background-color: #333;
+        box-shadow: 0 0 20px rgb(0 0 0 / 30%);
+    }
+
+    #nav .subnav a {
+        color: #fff;
+        padding: 3px 40px;
+        line-height: 48.5px;
+    }
+
+    #header .mobile-menu-btn {
+        display: block;
+    }
+
     #header .search-icon {
         display: none;
     }
+
+
+
+
 }
